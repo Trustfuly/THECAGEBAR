@@ -1,0 +1,207 @@
+:root {
+    @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+}
+
+body {
+    height: 100%;
+    background-color: #000000;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    color: goldenrod;
+}
+
+.header-img {
+    padding-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.bar-title {
+    text-align: center;
+    z-index: 20;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+span {
+    color: azure;
+}
+
+.uah::before {
+    color: goldenrod;
+    content: "\20B4";
+}
+
+.container-wrapper {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left {
+    width: 90%;
+    margin-left: 50px;
+}
+
+.right {
+    width: 90%;
+    margin-right: 50px;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Six Caps', sans-serif;
+}
+
+.cage {
+    color: red;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+@media screen and (min-width: 320px) {
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.bar-title {
+    padding-top: 70px;
+
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 20px 15px 0 15px;
+}
+
+.container-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.left {
+    width: 100%;
+    margin: 0;
+}
+
+.right {
+    width: 100%;
+    margin: 0;
+}
+
+.item {
+    padding: 0 15px;
+}
+
+}
+
+@media screen and (min-width: 640px) {
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 20px 15px 0 15px;
+}
+
+.container-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.left {
+    width: 100%;
+    margin: 0;
+}
+
+.right {
+    width: 100%;
+    margin: 0;
+}
+
+.item {
+    padding: 0 15px;
+}
+}
+
+@media screen and (min-width: 1000px) {
+
+body {
+    padding: 60px 150px 20px 150px;
+}
+
+.header-img {
+    width: 30%;
+    top: -20px;
+    right: 220px;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 50px;
+}
+    
+}
+
