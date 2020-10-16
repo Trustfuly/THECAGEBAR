@@ -74,6 +74,10 @@ footer a {
     text-decoration: none;
 }
 
+a:visited {
+    color: none;
+}
+
 footer span {
     transition: 0.5s;
     color: azure;
