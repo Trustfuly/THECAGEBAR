@@ -12,6 +12,14 @@ h1, h2 {
     color: goldenrod;
 }
 
+h2 {
+    margin: 20px 15px 10px 15px;
+}
+
+p {
+    margin: 0 auto;
+}
+
 .header-img {
     padding-left: 50px;
     position: absolute;
@@ -63,9 +71,22 @@ span {
     margin-right: 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
+footer span {
+    transition: 0.5s;
+    color: azure;
+}
+
+footer span:hover {
+    color: red;
+}
+
 .footer {
     width: 100%;
-    margin-top: 20px;
+    margin: 40px 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -98,7 +119,6 @@ h1 {
 
 h2 {
     font-size: 18px;
-    margin: 20px 15px 0 15px;
 }
 
 .container-wrapper {
@@ -145,7 +165,6 @@ h1 {
 
 h2 {
     font-size: 18px;
-    margin: 20px 15px 0 15px;
 }
 
 .container-wrapper {
@@ -181,7 +200,7 @@ h2 {
 @media screen and (min-width: 1000px) {
 
 body {
-    padding: 60px 150px 20px 150px;
+    padding: 60px 150px 0 150px;
 }
 
 .header-img {
