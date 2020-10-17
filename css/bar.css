@@ -383,3 +383,13 @@ body {
 }
 
 }
+
+@media screen and (min-height: 320px) {
+
+.bar-menu-bg {
+    top: -100px;
+    height: 150%;
+    right: 0;
+}
+
+}
