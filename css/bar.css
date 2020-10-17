@@ -221,7 +221,8 @@ body {
 }
 
 .bar-menu-bg {
-    height: 667px;
+    height: calc(100vh - 60px);
+    /* height: 667px; */
     right: -115px;
 }
 
@@ -272,7 +273,8 @@ body {
 }   
 
 .bar-menu-bg {
-    height: 667px;
+    /* height: 667px; */
+    height: calc(100vh - 60px);
 }
 
 }
@@ -285,7 +287,8 @@ body {
 }
 
 .bar-menu-bg {
-    height: 667px;
+    /* height: 667px; */
+    height: calc(100vh - 60px);
     top: 0;
     right: -75px;
 }
