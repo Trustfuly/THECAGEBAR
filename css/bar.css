@@ -17,6 +17,8 @@ body {
     bottom: 0;
     min-height: 667px; */
     /* height: 100%; */
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
     position: fixed;
     z-index: -1;
     filter: brightness(30%);
@@ -221,7 +223,7 @@ body {
 }
 
 .bar-menu-bg {
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
     /* height: 667px; */
     right: -115px;
 }
@@ -274,7 +276,7 @@ body {
 
 .bar-menu-bg {
     /* height: 667px; */
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
 }
 
 }
@@ -288,7 +290,7 @@ body {
 
 .bar-menu-bg {
     /* height: 667px; */
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
     top: 0;
     right: -75px;
 }
@@ -338,7 +340,7 @@ body {
 }
 
 .bar-menu-bg {
-    height: 100%;
+    /* height: 100%; */
     top: 0;
     right: 0;
 }
@@ -375,7 +377,7 @@ body {
 }
 
 .bar-menu-bg {
-    height: 100%;
+    /* height: 100%; */
     top: 0;
     right: 0;
 }

@@ -172,6 +172,14 @@
             <a href="http://thecagebar.in.ua" target="_blank" title="T#E CAGE BAR"><span>T#e <span class=cage>cage</span> bar</span></a>
         </div>
     </footer>
+    <script>
+        // We listen to the resize event
+        window.addEventListener('resize', () => {
+            // We execute the same script as before
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+    </script>
 </body>
 
 </html>
