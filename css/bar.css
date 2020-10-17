@@ -221,6 +221,7 @@ body {
 }
 
 .bar-menu-bg {
+    height: 667px;
     right: -115px;
 }
 
@@ -269,6 +270,10 @@ body {
     padding: 0 15%;
     margin: 0;
 }   
+
+.bar-menu-bg {
+    height: 667px;
+}
 
 }
 
