@@ -261,6 +261,12 @@ h2 {
 
 }
 
+@media screen and (min-width: 420px) {
+    
+.bar-menu-bg {
+    right: 150px;
+}
+
 @media screen and (min-width: 520px) {
 
 body {
@@ -270,7 +276,7 @@ body {
 
 .bar-menu-bg {
     top: 0;
-    right: -150px;
+    right: -130px;
 }    
 
 }
