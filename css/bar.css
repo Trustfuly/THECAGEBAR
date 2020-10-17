@@ -9,6 +9,7 @@ body {
     min-width: 355px;
     height: 100%;
     background-color: #000000;
+    overflow-y: hidden;
 }
 
 .bar-menu-bg {
