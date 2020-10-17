@@ -13,15 +13,14 @@ body {
 
 .bar-menu-bg {
     height: 100%;
-    /* padding-left: 50px; */
     position: fixed;
     z-index: -1;
     filter: brightness(30%);
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 3s;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
 }
 
 @keyframes fadein {
