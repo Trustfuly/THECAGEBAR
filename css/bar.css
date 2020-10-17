@@ -15,12 +15,44 @@ body {
     height: 100%;
     /* padding-left: 50px; */
     position: fixed;
-    top: 0;
-    right: 0;
     z-index: -1;
-    opacity: 0.4;
-    
+    filter: brightness(30%);
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 3s;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.4; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
 
 h1, h2 {
     text-transform: uppercase;
@@ -185,7 +217,10 @@ body {
 
 .bar-title {
     padding-top: 70px;
+}
 
+.bar-menu-bg {
+    right: -210px;
 }
 
 h1 {
@@ -229,16 +264,28 @@ h2 {
 
 @media screen and (min-width: 520px) {
 
-    body {
-        padding: 0 15%;
-        margin: 0;
-    }
+body {
+    padding: 0 15%;
+    margin: 0;
+}
+
+.bar-menu-bg {
+    top: 0;
+    right: -150px;
+}    
+
+}
 
 @media screen and (min-width: 640px) {
 
 body {
     padding: 0 20%;
     margin: 0;
+}
+
+.bar-menu-bg {
+    top: 0;
+    right: -75px;
 }
 
 h1 {
@@ -283,6 +330,11 @@ h2 {
 
 body {
     padding: 60px 150px 0 150px;
+}
+
+.bar-menu-bg {
+    top: 0;
+    right: 0;
 }
 
 .header-img {
