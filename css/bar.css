@@ -9,7 +9,7 @@ body {
     min-width: 355px;
     height: 100%;
     background-color: #000000;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .bar-menu-bg {
@@ -274,10 +274,10 @@ body {
     margin: 0;
 }   
 
-.bar-menu-bg {
-    /* height: 667px; */
-    /* height: calc(100vh - 60px); */
-}
+/* .bar-menu-bg {
+     height: 667px;
+     height: calc(100vh - 60px); 
+} */
 
 }
 
