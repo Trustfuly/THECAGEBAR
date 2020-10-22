@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Six+Caps&display=swap');
+
+:root {
+    --txt-title: goldenrod;
+    --txt-subtitle: azure; 
+}
+
+body {
+    min-width: 355px;
+    height: 100%;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+.bar-menu-bg {
+    /* top: 0;
+    bottom: 0;
+    min-height: 667px; */
+    /* height: 100%; */
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    position: fixed;
+    z-index: -1;
+    filter: brightness(30%);
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.4; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0,4; }
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    margin: 20px 15px 10px 15px;
+}
+
+h2.item {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0 auto;
+}
+
+.header-img {
+    padding-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.bar-title {
+    text-align: center;
+    z-index: 20;
+}
+
+.category-title {
+    color: azure;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 25px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.sub-item {
+    color: rgba(211, 211, 211, 0.747);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+span {
+    color: azure;
+}
+
+.divider {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 3vh;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .45);  
+}
+
+.divider::before {
+    background: linear-gradient(to right, rgba(240,240,240,0), red);
+    margin-right: 4vh;
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;
+}
+
+
+.divider::after {
+    background: linear-gradient(to left, rgba(240,240,240,0), red);
+    margin-left: 4vh;
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 30vw;   
+}
+
+.uah::before {
+    color: goldenrod;
+    content: "\20B4";
+}
+
+.container-wrapper {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left {
+    width: 90%;
+    margin-left: 50px;
+}
+
+.right {
+    width: 90%;
+    margin-right: 50px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+}
+
+footer span {
+    transition: 0.5s;
+    color: azure;
+}
+
+footer span:hover {
+    color: red;
+}
+
+.footer {
+    width: 100%;
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-family: 'Six Caps', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.cage {
+    color: red;
+    text-transform: uppercase;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+
+body {
+    padding: 2%;
+    margin: 0;
+}
+
+.bar-title {
+    padding-top: 70px;
+}
+
+.bar-menu-bg {
+    /* height: calc(100vh - 60px); */
+    /* height: 667px; */
+    right: -115px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.container-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.left {
+    width: 100%;
+    margin: 0;
+}
+
+.right {
+    width: 100%;
+    margin: 0;
+}
+
+.item {
+    padding: 0 15px;
+}
+
+}
+
+@media screen and (min-width: 520px) {
+
+body {
+    padding: 0 15%;
+    margin: 0;
+}   
+
+.bar-menu-bg {
+    /* height: 667px; */
+    /* height: calc(100vh - 60px); */
+}
+
+}
+
+@media screen and (min-width: 640px) {
+
+body {
+    padding: 0 20%;
+    margin: 0;
+}
+
+.bar-menu-bg {
+    /* height: 667px; */
+    /* height: calc(100vh - 60px); */
+    top: 0;
+    right: -75px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.container-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.left {
+    width: 100%;
+    margin: 0;
+}
+
+.right {
+    width: 100%;
+    margin: 0;
+}
+
+.item {
+    padding: 0 15px;
+}
+}
+
+@media screen and (min-width: 1000px) {
+
+body {
+    padding: 60px 70px 0 70px;
+}
+
+.bar-menu-bg {
+    /* height: 100%; */
+    top: 0;
+    right: 0;
+}
+
+.header-img {
+    width: 30%;
+    top: -20px;
+    right: 220px;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 50px;
+}
+
+.divider {
+    font-size: 5vh;
+}
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+body {
+    padding: 60px 150px 0 150px;
+}
+
+.bar-menu-bg {
+    /* height: 100%; */
+    top: 0;
+    right: 0;
+}
+
+}
+
+@media screen and (max-height: 450px) {
+
+.bar-menu-bg {
+    top: -100px;
+    height: 150%;
+    right: 0;
+}
+
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bar.css">
+    <title>BAR MENU - T#E CAGE BAR</title>
+
+<style>
+
+    .filler {
+        width: 25%;
+    }
+
+    .uah {
+        margin: 0 5px;
+    }
+
+
+    .container-wrapper {
+        align-items: center;
+    }
+
+    .crazy-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .table-header {
+        width: 100%;
+    }
+
+    .row {
+        display: flex; 
+        border: 1px solid rgba(240, 255, 255, 0.541);
+    }
+
+    .cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cell:first-child {
+        border-right: none;
+        border-left: 1px solid rgba(240, 255, 255, 0.541);
+    }
+
+    
+    .cell:last-child {
+        border-left: none;  
+    }
+
+    .price .cell:last-child {
+        border-left: 1px solid rgba(240, 255, 255, 0.541);
+    }
+    
+    .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .second-cell,
+    .third-cell {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: azure;
+    }
+
+    .sub-item.crazy {
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .item.crazy {
+        padding: 10px 15px 0 15px;
+    }
+
+    @media screen and (min-width:320px) {
+
+    .row {
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    .cell:first-child {
+        border-right: none;
+        border-bottom: 1px solid rgba(240, 255, 255, 0.541);
+    }
+
+    
+    .cell:last-child {
+        border-left: none;  
+    }
+
+    .price .cell:last-child {
+        border-left: 1px solid rgba(240, 255, 255, 0.541);
+        height: 40px;
+    }
+
+    .price .cell:first-child {
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .table {
+        max-width: 340px;
+    }
+
+    .first-cell {
+        max-width: 340px;
+    }
+
+    .second-cell,
+    .third-cell {
+        width: 170px;
+    }
+
+    .sub-item.crazy {
+        padding: 10px 15px;
+    }
+    }
+
+    @media screen and (min-width:640px) {
+    
+    .table {
+        max-width: 600px;
+    }
+
+    .row {
+        flex-direction: row;  
+    }
+
+    .first-cell {
+        min-width: 300px;
+        max-width: 400px;
+        height: 75px;
+    }
+
+    .second-cell,
+    .third-cell {
+        min-width: 50px;
+        max-width: 100px;
+        height: 75px;
+    }
+
+    .cell:first-child {
+        border-bottom: none;
+    }
+
+    
+    .cell:last-child {
+        border-left: 1px solid rgba(240, 255, 255, 0.541);
+    }
+
+    .price .cell:last-child {
+        border-left: 1px solid rgba(240, 255, 255, 0.541);
+        height: 75px;
+    }
+
+    .price .cell:first-child {
+        border-bottom: none;
+        border-left: 1px solid rgba(240, 255, 255, 0.541);
+    }
+    
+    }
+
+    @media screen and (min-width:1000px) {
+    
+    .table {
+        max-width: 800px;
+    }
+
+    .first-cell {
+        max-width: 560px;
+    }
+
+    .second-cell,
+    .third-cell {
+        max-width: 120px;
+    }
+    }
+
+</style>
+</head>
+
+<body>
+    <img class="bar-menu-bg" src="img/crazy.jpg">
+    <h1 class="bar-title">Crazy menu</h1>
+    <h2 class="crazy-title">Меню удовольствий</h2>
+    <div class="container-wrapper">
+        <div class="table">
+            <div class="row">
+                <div class="cell first-cell table-header">
+                    <div>
+                    <p class="item"></p>
+                    <span class="sub-item"></span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">Основной зал</div>
+                <div class="cell third-cell">VIP room</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">VIP порка</h2>
+                    <span class="sub-item crazy">Во время порки используется реквизит для фагелляции и спанкинга,
+                                                   для удовольствия и наказания.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">15 минут<span class="uah"></span>700</div>
+                <div class="cell third-cell">15 минут<span class="uah"></span>800</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Ret Play</h2>
+                    <span class="sub-item crazy">Игра в &laquo;Хозяина зверюшки&raquo;. Ролевая игра в которой один 
+                                                    из партнеров играет роль домашнего животного.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">15 минут<span class="uah"></span>750</div>
+                <div class="cell third-cell">15 минут<span class="uah"></span>800</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Shibari</h2>
+                    <span class="sub-item crazy">Эротико-эстетическая практика, заключающаяся в лишении Домом Саба 
+                                                   свобооды действий с помощью веревок.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">30 минут<span class="uah"></span>800</div>
+                <div class="cell third-cell">30 минут<span class="uah"></span>1000</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Dark room</h2>
+                    <span class="sub-item crazy">Паре предоставляется отдельная комната для свободной практики 
+                                                   БДСМ на едине друг с другом.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell"></div>
+                <div class="cell third-cell">20 минут<span class="uah"></span>1000</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Red room</h2>
+                    <span class="sub-item crazy">Паре предоставляется отдельная комната для свободной практики 
+                        БДСМ на едине друг с другом.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell"></div>
+                <div class="cell third-cell">20 минут<span class="uah"></span>1000</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Flame&ice</h2>
+                    <span class="sub-item crazy">Использование льда и специальных свечей для горячего воска.
+                                                   Пусть нижние кричат громче от удовольствия.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">15 минут<span class="uah"></span>700</div>
+                <div class="cell third-cell">15 минут<span class="uah"></span>700</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Free hostes</h2>
+                    <span class="sub-item crazy">Наша хостес все внимание уделит только Вам. Госпожа будет
+                                                   неотлучным спутником и проведет экскурсию.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">30 минут<span class="uah"></span>1000</div>
+                <div class="cell third-cell"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Free model</h2>
+                    <span class="sub-item crazy">Наша модель все внимание уделит только Вам. Госпожа будет
+                        неотлучным спутником и проведет экскурсию.</span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">30 минут<span class="uah"></span>1000</div>
+                <div class="cell third-cell"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Ролевые игры</h2>
+                    <span class="sub-item crazy">Больница / офис. Выбирайте роль, и давайте по играем.</span>
+                    </div>
+                </div>
+                <div class="filler"></div>
+                <div class="price">
+                <div class="cell second-cell">15 минут<span class="uah"></span>750</div>
+                <div class="cell third-cell">15 минут<span class="uah"></span>800</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell">
+                    <div>
+                    <h2 class="item crazy">Похищение</h2>
+                    <span class="sub-item crazy">Выкупи свободу похищенного человека, любой ценой.</span>
+                    </div>
+                </div>
+                <div class="filler"></div>
+                <div class="price">
+                <div class="cell second-cell">15 минут<span class="uah"></span>700</div>
+                <div class="cell third-cell"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell first-cell table-header">
+                    <div>
+                    <p class="item"></p>
+                    <span class="sub-item"></span>
+                    </div>
+                </div>
+                <div class="price">
+                <div class="cell second-cell">Основной зал</div>
+                <div class="cell third-cell">VIP room</div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <footer>
+        <div class="footer">
+            <a href="http://thecagebar.in.ua" target="_blank" title="T#E CAGE BAR"><span>T#e <span class=cage>cage</span> bar</span></a>
+        </div>
+    </footer>
+    <script>
+        // We listen to the resize event
+        window.addEventListener('resize', () => {
+            // We execute the same script as before
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+    </script>
+</body>
+
+</html>
